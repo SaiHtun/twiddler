@@ -1,0 +1,128 @@
+.wrapper {
+  display: flex;
+}
+.nav-panel {
+  flex: 2;
+  border-right: none;
+}
+.my-panel {
+  flex: 7;
+  border-right: rgb(77, 76, 76) 1px solid;
+  border-left: rgb(77, 76, 76) 1px solid;
+}
+
+/* Custom ScrollBar */
+
+.my-panel h1 {
+  font-size: 1.5rem;
+  padding: 5px 0px 0px 10px;
+}
+.my-panel .borderLine {
+  margin-bottom: 0px;
+}
+.my-profile-panel {
+  position: relative;
+}
+
+.side-panel {
+  flex: 4;
+}
+
+.card {
+  background-color: #141d26;
+  border: none;
+  position: relative;
+}
+.card .card-body {
+  margin: 40px 0px 0px 10px;
+}
+.card #profile-img {
+  position: absolute;
+  top: 25%;
+  left: 3%;
+}
+.card-body .card-title {
+  display: inline-block;
+  font-weight: bold;
+}
+#tName {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  margin-left: 20px;
+}
+.card-body #edit {
+  position: absolute;
+  display: inline-block;
+  right: 2%;
+  top: 40%;
+}
+.card-body .card-text {
+  font-size: 14px;
+}
+
+.card .follow,
+.tweetCount {
+  list-style: none;
+  display: flex;
+}
+.follow li,
+.tweetCount li {
+  margin-right: 10px;
+}
+
+.my-menu {
+  margin-top: 50px;
+}
+.my-menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+}
+.my-menu ul li {
+  padding: 10px 15px;
+}
+.my-menu ul li:hover a {
+  color: white;
+}
+.my-menu li:hover {
+  background-color: #0275d8;
+  border-radius: 20px;
+}
+.my-menu a {
+  color: #3f5a7a;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* My Tweet Panel */
+
+.my-tweet-panel {
+  padding: 20px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 1000px) {
+  .card-body #edit {
+    right: 10%;
+  }
+  .my-menu ul {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .card-body #edit {
+    right: 30%;
+  }
+  .my-menu ul {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .card-body #edit {
+    right: 50%;
+  }
+  .my-menu ul {
+    width: 300px;
+  }
+}

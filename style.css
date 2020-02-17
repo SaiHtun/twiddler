@@ -1,0 +1,292 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  font-family: sans-serif;
+  background-color: #141d26;
+  color: white;
+  line-height: 16px;
+  overflow: auto;
+  line-height: 16px;
+}
+
+.wrapper {
+  display: flex;
+  position: relative;
+}
+
+.nav-panel,
+.tweet-panel,
+.side-panel {
+  height: 100vh;
+}
+
+/* Nav Panel */
+.nav-panel {
+  flex: 2;
+  border-right: 0.5px solid rgb(77, 76, 76);
+}
+.tweet-panel {
+  flex: 7;
+  border-right: 0.5px solid rgb(77, 76, 76);
+}
+.side-panel {
+  flex: 3;
+}
+.nav-panel-lists {
+  margin-top: 30px;
+  margin-right: 30px;
+}
+
+.nav-panel-lists ul {
+  list-style: none;
+}
+
+.nav-panel-lists li {
+  margin-bottom: 30px;
+  position: relative;
+  width: 150px;
+  height: 25px;
+}
+.nav-panel-lists ul li a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+.nav-panel-lists ul li a:hover {
+  color: #1da1f2;
+}
+
+span {
+  margin-left: 20px;
+  text-decoration: none;
+  position: absolute;
+  top: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* tweet panel  */
+
+.form h1 {
+  font-size: 1.2rem;
+  padding: 10px 0px 6px 10px;
+  margin-left: 10px;
+}
+.form h1 a {
+  color: white;
+  text-decoration: none;
+}
+.myForm {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  border-bottom: 10px solid #243447;
+}
+.borderLine {
+  border-bottom: 1px solid rgb(83, 82, 82);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.myTweetBtn {
+  align-self: flex-end;
+  position: absolute;
+  right: 3%;
+  top: 50%;
+  opacity: 0.5;
+}
+
+.myForm .myTweet {
+  border: none;
+  color: white;
+}
+.myTweet:hover {
+  background-color: #243447;
+  filter: brightness(150%);
+}
+.tweet-panel h1 {
+  font-weight: bold;
+}
+.tweet-panel {
+  overflow: auto;
+}
+
+/* width */
+.tweet-panel::-webkit-scrollbar {
+  width: 4px;
+  background-color: #374b64;
+}
+.tweet-panel::-webkit-scrollbar-thumb {
+  background: #0275d8;
+  border-radius: 2px;
+}
+.tweet-panel::-webkit-scrollbar-button {
+  background-color: black;
+}
+.tweet-panel::-webkit-scrollbar-corner {
+  background-color: #374b64;
+}
+.tweet-panel::-webkit-scrollbar-thumb:hover {
+  background: #0275d8;
+}
+.posts {
+  padding: 0px 20px 0px 20px;
+}
+.myPost {
+  display: flex;
+  padding: 15px;
+  margin-bottom: 20px;
+}
+.myPost .text {
+  margin-left: 20px;
+}
+.myPost .text a {
+  color: white;
+  text-decoration: none;
+}
+.myPost img {
+  border-radius: 40px;
+}
+.myPost h3 {
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.myPost p {
+  font-size: 14px;
+}
+.myPost:hover {
+  background-color: #141d26;
+  filter: brightness(150%);
+  border-radius: 30px;
+}
+
+/* Side Panel */
+
+.side-form {
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.search:hover {
+  filter: brightness(150%);
+}
+.searchForm {
+  position: relative;
+}
+
+#sIcon {
+  position: absolute;
+  color: #0275d8;
+  left: 70%;
+}
+
+.list-group {
+  margin: 10px 0px 10px 40px;
+}
+
+.list-group .list-group-item {
+  background-color: #1d2a3a;
+}
+.list-group .list-group-item:hover {
+  filter: brightness(150%);
+}
+.list-group .list-group-item a {
+  color: white;
+  text-decoration: none;
+}
+
+.list-group-item:first-child {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+/* Trends for you */
+
+#tfy a,
+#wtf a {
+  color: #0275d8;
+}
+
+/* Terms Policy */
+.policy {
+  margin: 10px 0px 0px 30px;
+  color: #374b64;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+}
+.policy ul {
+  list-style: none;
+  display: flex;
+  margin-bottom: 0;
+}
+.policy ul li {
+  margin-right: 5px;
+}
+.policy a {
+  text-decoration: none;
+  color: #374b64;
+}
+.policy small {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* bird Animation */
+#flyBird {
+  animation: bird 2s ease-in;
+}
+@keyframes bird {
+  0% {
+    transform: translateY(600px) translateX(-40px) rotate(360deg);
+    opacity: 0.5;
+  }
+  80% {
+    transform: translateX(-60px);
+    opacity: 0.7;
+  }
+
+  100% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+}
+
+/* Responsive Web */
+@media screen and (max-width: 1200px) {
+  .nav-panel-lists span {
+    display: none;
+  }
+  .nav-panel-lists button {
+    display: none;
+  }
+  .nav-panel {
+    text-align: start;
+    width: 100px;
+  }
+  .tweet-panel {
+    flex: 10;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .nav-panel {
+    text-align: start;
+  }
+
+  .side-panel {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .nav-panel {
+    text-align: center;
+  }
+  .nav-panel-lists li {
+    right: 20px;
+    margin-left: 0px;
+  }
+}

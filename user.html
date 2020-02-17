@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    /> -->
+    <link rel="stylesheet" href="user.css" />
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <div class="wrapper">
+          <div class="nav-panel">
+            <div class="nav-panel-lists ">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i
+                      id="flyBird"
+                      class="fab fa-twitter"
+                      style="width: 30px; height: 30px; color:#0275d8;"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="index.html"
+                    ><i
+                      class="fas fa-home"
+                      style="width: 25px; height: 25px;"
+                    ></i>
+                    <span>Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fab fa-wpexplorer "
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Explore</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="far fa-bell"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Notifications</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fas fa-sms"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Messages</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="far fa-bookmark"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Bookmarks</span></a
+                  >
+                </li>
+                <li class="pills">
+                  <a href="#"
+                    ><i
+                      class="fas fa-list"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Lists</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fas fa-id-card"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Profile</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fas fa-angle-double-right"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>More</span></a
+                  >
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-block ">Tweet</button>
+            </div>
+          </div>
+          <div class="my-panel">
+            <h5 style="margin: 5px 0px 0px 30px;">
+              <a href="index.html"
+                ><i style="font-size: 16px;" class="fas fa-arrow-left"></i
+              ></a>
+              <a id="tName" href="#"></a>
+            </h5>
+            <div class="borderLine"></div>
+            <div class="my-profile-panel">
+              <div class="card" style="width: 40rem;">
+                <img
+                  id="b-img"
+                  style="width: 100%; height: 200px;"
+                  src="https://picsum.photos/seed/picsum/200/300"
+                  class="card-img-top"
+                  alt="..."
+                />
+
+                <img
+                  style="height: 120px; width: 120px; border-radius: 60px; border: 1px solid #141d26;"
+                  src="https://picsum.photos/id/237/200/300"
+                  alt="profile-img"
+                  id="profile-img"
+                />
+                <div class="card-body">
+                  <h5 class="card-title userName"></h5>
+                  <a id="edit" href="#" class="btn btn-outline-primary"
+                    >Edit Profile</a
+                  >
+                  <p class="card-text career-text">
+                    Software Engineer
+                  </p>
+                  <p class="card-text text-muted">
+                    <i
+                      style="margin-right: 5px;"
+                      class="fas fa-birthday-cake"
+                    ></i>
+                    Born December 30
+                    <i
+                      style="margin: 0px 5px 0px 10px;"
+                      class="far fa-calendar-alt"
+                    ></i
+                    >1992 Joined January 2020
+                  </p>
+                  <ul class="follow">
+                    <li>10</li>
+                    <li class="text-muted">Following</li>
+                    <li>1</li>
+                    <li class="text-muted">Follower</li>
+                  </ul>
+                  <ul class="tweetCount">
+                    <li id="count">10</li>
+                    <li class="text-muted">Tweets</li>
+                  </ul>
+                  <div class="my-menu">
+                    <ul>
+                      <li><a href="#">Tweets</a></li>
+                      <li><a href="#">Tweets & replies</a></li>
+                      <li><a href="#">Media</a></li>
+                      <li><a href="#">Likes</a></li>
+                      <li id="mTweet"><a href="#">More Tweets</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr
+              style="margin-top: 0px; padding-top: 0px;background-color: rgb(95, 93, 93);"
+            />
+            <div class="my-tweet-panel"></div>
+          </div>
+          <div class="side-panel">
+            <div class="side-form">
+              <form class="form-inline my-2 my-lg-0 searchForm">
+                <input
+                  style="background-color: #243447; color: white; border: none; "
+                  class="form-control  mr-sm-4 "
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i id="sIcon" class="fas fa-search"></i>
+              </form>
+            </div>
+            <div class="list-2">
+              <ul class="list-group">
+                <li id="wtf" class="list-group-item">
+                  <a href="#">You might like</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list-1">
+              <ul class="list-group">
+                <li id="tfy" class="list-group-item">
+                  <a href="#">Trends for you</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="policy">
+              <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Ads info</a></li>
+                <li>
+                  <a href="#"
+                    >More<i
+                      class="fas fa-chevron-down "
+                      style="font-size: 8px;"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+              <small>&copy; 2020 Twitter, Inc.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="data_generator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./node_modules/moment/moment.js"></script> -->
+    <script src="./app.js"></script>
+    <script src="./user.js"></script>
+  </body>
+</html>

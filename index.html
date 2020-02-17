@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter</title>
+
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+    />
+    <link
+      rel="stylesheet"
+      href="./node_modules/bootstrap/dist/css/bootstrap.min.css"
+    /> -->
+  </head>
+  <body>
+    <div class="body">
+      <div class="container">
+        <div class="wrapper">
+          <div class="nav-panel">
+            <div class="nav-panel-lists ">
+              <ul>
+                <li>
+                  <a href="#"
+                    ><i
+                      id="flyBird"
+                      class="fab fa-twitter"
+                      style="width: 30px; height: 30px; color:#0275d8;"
+                    ></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fas fa-home"
+                      style="width: 25px; height: 25px;"
+                    ></i>
+                    <span>Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fab fa-wpexplorer "
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Explore</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="far fa-bell"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Notifications</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fas fa-sms"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Messages</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="far fa-bookmark"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Bookmarks</span></a
+                  >
+                </li>
+                <li class="pills">
+                  <a href="#"
+                    ><i
+                      class="fas fa-list"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Lists</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fas fa-id-card"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>Profile</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><i
+                      class="fas fa-angle-double-right"
+                      style="width: 25px; height: 25px;"
+                    ></i
+                    ><span>More</span></a
+                  >
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-block ">Tweet</button>
+            </div>
+          </div>
+          <div class="tweet-panel">
+            <div class="form">
+              <h1><a href="#">Home</a></h1>
+              <div class="borderLine"></div>
+              <form id="hellForm">
+                <div class="form-group myForm">
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="username"
+                      name="userName"
+                      placeholder="Enter your username"
+                      style="background-color: #141d26; color: white; border: 0.5px solid #243447;"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <textarea
+                      style="background-color:#141d26; color: white;"
+                      name="newTweet"
+                      class="form-control myTweet"
+                      cols="2"
+                      rows="3"
+                      placeholder="What's happening ?"
+                    ></textarea>
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Share your thoughts with the world.</small
+                    >
+                  </div>
+
+                  <button type="submit" class="btn btn-primary myTweetBtn">
+                    Tweet
+                  </button>
+                </div>
+              </form>
+              <div class="posts"></div>
+            </div>
+          </div>
+          <div class="side-panel">
+            <div class="side-form">
+              <form class="form-inline my-2 my-lg-0 searchForm">
+                <input
+                  style="background-color: #243447; color: white; border: none; "
+                  class="form-control  mr-sm-4 "
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i id="sIcon" class="fas fa-search"></i>
+              </form>
+            </div>
+            <div class="list-1">
+              <ul class="list-group">
+                <li id="tfy" class="list-group-item">
+                  <a href="#">Trends for you</a>
+                </li>
+              </ul>
+            </div>
+            <div class="list-2">
+              <ul class="list-group">
+                <li id="wtf" class="list-group-item">
+                  <a href="#">Who to follow</a>
+                </li>
+              </ul>
+            </div>
+            <div class="policy">
+              <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Cookies</a></li>
+                <li><a href="#">Ads info</a></li>
+                <li>
+                  <a href="#"
+                    >More<i
+                      class="fas fa-chevron-down "
+                      style="font-size: 8px;"
+                    ></i
+                  ></a>
+                </li>
+              </ul>
+              <small>&copy; 2020 Twitter, Inc.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="data_generator.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <!-- <script src="./node_modules/@fortawesome/fontawesome-free/js/all.min.js"></script>
+    <script src="./node_modules/moment/moment.js"></script> -->
+    <script src="./app.js"></script>
+  </body>
+</html>
